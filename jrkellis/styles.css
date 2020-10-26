@@ -1,0 +1,605 @@
+/* ******** Fonts ********
+
+font-family: 'Boogaloo', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Starkey', cursive;
+*/
+
+@font-face {
+  font-family: 'Starkey';
+  src: url(fonts/Starkey.TTF);
+  font-weight: normal;
+}
+/* ******** Colors ********
+
+Burgundy:         #9c273e;
+                  rgba(156, 39, 62, 1);
+
+
+Champagne Pink:   #eddcd2;
+                  rgba(237, 220, 210, 1);
+
+Linen:            #fff1e6;
+                  rgba(255, 241, 230, 1);
+
+
+Artichoke:        #a5a58d;
+                  rgba(165, 165, 141, 1);
+*/
+
+
+/* ******** Global Styles ******** */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 15px;
+}
+
+p {
+  font-family: 'Merriweather', serif;
+  line-height: 1.75em;
+  margin-bottom: 3em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+      /* ******** Headings ******** */
+      h1, h2, h3, h4, h5 {
+        font-family: 'Boogaloo', cursive;
+        font-weight: normal;
+      }
+
+      h1 {
+        font-size: 3em;
+        text-transform: uppercase;
+        margin: 50px auto;
+        text-align: center;
+
+      }
+
+      h2 {
+        font-size: 3em;
+
+      }
+
+      h3 {
+        font-size: 1.5em;
+        font-style: italic;
+      }
+
+      h4 {
+        font-size: 1.2em;
+      }
+
+      h5 {
+        font-size: 1em;
+      }
+
+
+
+/* All sections */
+body > * {
+  padding: 30px;
+}
+
+
+/* ******** Grid Not Supported, Mobile View ********
+/* Title Bar*/
+#title {
+  margin: 0;
+  padding: 0;
+  background: #a5a58d;
+  color: white;
+  font-family: 'Starkey', cursive;
+  font-size: 5em;
+  text-align: center;
+  text-transform: capitalize;
+  white-space: pre-line;
+}
+
+/* Main Navigation */
+.hamburger-icon {
+  display: none;
+}
+
+#mobileNav {
+  display: none;
+}
+
+nav {
+  height: 50px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  color: #9c273e;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center;
+  flex: 0 1 100px;
+  white-space: nowrap;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: baseline;
+}
+
+.sm-icons {
+  flex: 0 1 300px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.sm-icons a {
+  white-space: nowrap;
+}
+
+nav a:hover {
+  color: #a5a58d;
+}
+
+nav a:active {
+  color: #9c273e;
+}
+
+/* Intro Section  */
+.intro {
+  background: #9c273e;
+  color: white;
+}
+
+.intro p {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.starkey {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  color: white;
+  font-family: 'Starkey', cursive;
+  font-size: 4em;
+  text-transform: capitalize;
+}
+
+.intro img {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* What I Do Section */
+.whatIdo {
+  padding: 0;
+}
+
+      /* Disciplines Subsection */
+      .disciplines {
+        background: #fff1e6;
+        text-align: center;
+      }
+
+      .disciplines img {
+        width: 50%;
+        clip-path: circle(50%);
+        margin: 10px auto;
+      }
+
+      .disciplines h2, .disciplines p {
+        padding: 15px;
+      }
+
+      .disciplines h2 {
+        font-size: 1.5em;
+      }
+
+/* Current Work (Portfolio) Section */
+.work {
+  background: #a5a58d;
+}
+
+.work p {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.work img {
+  display: block;
+  width: 80%;
+  margin: 15px auto;
+}
+
+    /* Credentials Subsections */
+    .credentials > * {
+      padding: 30px;
+    }
+
+    .education {
+      background: #fff1e6;
+    }
+
+    .experience {
+      background: #eddcd2;
+    }
+
+    .education h2, .experience h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .experience h5 {
+      margin-bottom: 20px;
+    }
+
+/* Get In Touch Section */
+.getInTouch {
+  background: #9c273e;
+  margin-bottom: 15px;
+}
+
+.getInTouch h1 {
+  text-align: center;
+  margin: 10px auto;
+}
+
+input, textarea {
+  width: 90%;
+  background: white;
+  display: block;
+  background: none;
+  border: none;
+  font-family: 'Boogaloo', cursive;
+  color: white;
+  font-size: 2em;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  margin: 40px auto;
+}
+
+    /* Submit Button */
+    input#submit {
+      width: 250px;
+      background: #eddcd2;
+      color: #9c273e;
+      text-transform: uppercase;
+      border-radius: 10px;
+    }
+
+
+/* Footer */
+footer {
+  background: #a5a58d;
+  color: white;
+  padding-bottom: 0;
+}
+
+footer p {
+  text-align: center;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  display: block;
+  font-family: 'Boogaloo', cursive;
+}
+
+footer a:hover {
+  color: #eddcd2;
+}
+
+.email, .tel {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.footer-icons {
+  display: none;
+}
+
+
+/* ******************* Small Breakpoint ******************* */
+
+@media (min-width: 500px) {
+    @supports (grid-area:auto) {
+
+    /* What I Do Section */
+    .whatIdo {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, auto) 24px;
+      grid-column-gap: 10px;
+    }
+
+        .whatIdo h1 {
+          grid-column: 1/4;
+          grid-row: 1/2;
+          text-align: center;
+        }
+
+        .disciplines {
+          width: 100%;
+        }
+
+        .disciplines img {
+          width: 70%;
+        }
+
+    /* Current Work (Portfolio) Section */
+    .imageGroup {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .work img {
+      display: inline-block;
+      width: 45%;
+    }
+  }
+}
+
+/* ******************* Small Breakpoint, Nav Change ******************* */
+@media (max-width: 600px) {
+    body {
+      width: 100%;
+      margin: 0;
+    }
+
+    /* Title Bar */
+    #title {
+      margin-bottom: 15px;
+    }
+
+
+    /* Mobile Navigation Styles */
+    nav {
+      display: none;
+    }
+
+    .hamburger-icon {
+      background: #a5a58d;
+      display: block;
+      top: 10px;
+      left: 0;
+    }
+
+    .hamburger-icon img {
+      mix-blend-mode: multiply;
+    }
+
+    #mobileNav {
+      display: contents;
+      position: fixed;
+      top: 100px;
+      width: 70%;
+      white-space: nowrap;
+      background: rgba(237, 220, 210, .8);
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    #mobileNav a {
+      display: block;
+      text-align: left;
+      font-family: 'Merriweather', serif;
+      font-weight: 700;
+      font-size: 1em;
+      margin-bottom: 15px;
+    }
+
+    #mobileNav a:hover {
+      color: #9c273e;
+    }
+
+    /* Footer Navigation */
+    .footer-icons {
+      display: flex;
+      margin: 20px auto;
+      justify-content: space-around;
+    }
+
+    .footer-icons img {
+      flex: 1 0 20%;
+    }
+}
+
+/* ******************* MIN-WIDTH FOR GRID VIEW ******************* */
+@media (min-width:800px) {
+  @supports (grid-area:auto) {
+    /* Grid Container */
+    body {
+      display: grid;
+      grid-template-columns: 125px 1fr 1fr;
+      grid-template-rows: repeat(7, auto);
+      grid-row-gap: 48px;
+    }
+
+    /* ******** Grid Sections ******** */
+    /* Title Bar */
+    #title {
+      grid-column: 1/4;
+      grid-row:1/2;
+    }
+
+    /* Main Navigation */
+    nav {
+      background: white;
+      display: block;
+      width: 125px;
+      grid-column: 1/2;
+      grid-row: 3/7;
+      padding: 0;
+      position: fixed;
+      top: 220px;
+      left: 15px;
+    }
+
+    nav a {
+      color: black;
+      display: block;
+      text-align: left;
+      font-family: 'Merriweather', serif;
+      font-weight: 700;
+      font-size: 1em;
+      margin-bottom: 15px;
+    }
+
+    .sm-icons {
+      padding: 0;
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .sm-icons a {
+      flex: 1 0 50%;
+    }
+
+    /* Intro Section */
+    .intro {
+      grid-column: 2/4;
+      grid-row: 2/3;
+    }
+
+    /* What I Do Section */
+    .whatIdo {
+      grid-column: 2/4;
+      grid-row: 3/4;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, auto) 24px;
+      grid-column-gap: 10px;
+    }
+
+        .whatIdo h1 {
+          grid-column: 1/4;
+          grid-row: 1/2;
+          text-align: center;
+        }
+
+
+    /* Current Work (Portfolio) Section */
+    .work {
+      grid-column: 2/4;
+      grid-row: 4/5;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: repeat(2, auto);
+    }
+
+        .work h1 {
+          grid-column: 1/3;
+          grid-row: 1/2;
+          text-align: center;
+        }
+
+        .work img {
+          width: 30%;
+          /* margin: 5px; */
+        }
+
+        .imageGroup {
+          grid-column: 1/2;
+          grid-row: 2/3;
+          padding-left: 15px;
+          padding-right: 0;
+        }
+
+        .work p {
+          padding: 0;
+        }
+
+    /* Credentials Section */
+
+    .credentials {
+      grid-column: 2/4;
+      grid-row: 5/6;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, auto);
+    }
+
+        .credentials h1 {
+          grid-column: 1/3;
+          grid-row: 1/2;
+          text-align: center;
+        }
+
+        .education {
+          grid-column: 1/2;
+          grid-row: 2/3;
+        }
+
+        .experience {
+          grid-column: 2/3;
+          grid-row: 2/3;
+        }
+
+    /* Get In Touch Form */
+    .getInTouch {
+      grid-column: 2/4;
+      grid-row: 6/7;
+    }
+
+    /* Footer */
+    footer {
+      grid-column: 1/4;
+      grid-row: 7/8;
+    }
+  }
+}
+
+/* ******************* Small Breakpoint ******************* */
+@media (min-width:968px) {
+  @supports (grid-area:auto) {
+
+    /* Intro Section */
+    .intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(2, auto);
+      background-color: white;
+      background-image: url(images/grunge.gif);
+      background-size: cover;
+      border-bottom: 2px solid #9c273e;
+    }
+
+        .intro h1 {
+          grid-column: 1/2;
+          grid-row: 1/2;
+          margin-left: 50px;
+        }
+
+        .intro p {
+          grid-column: 1/2;
+          grid-row: 2/3;
+          margin: 0;
+        }
+
+        .intro img {
+          grid-column: 2/3;
+          grid-row: 2/3;
+          width: 80%;
+          margin: 0 auto;
+          padding: 0;
+        }
+  }
+}

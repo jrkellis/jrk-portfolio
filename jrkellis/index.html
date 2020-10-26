@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jamie Kellis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+
+
+    <script>
+      function toggleMenu() {
+        var x = document.getElementById("mobileNav");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+</head>
+
+
+  <body>
+      <!-- Hamburger Icon for Mobile Screens -->
+      <div class="hamburger-icon">
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+        <img src="images/hamburger-icon.gif" alt="">
+        </a>
+      </div>
+
+    <section id="mobileNav">
+      <a href="#">home</a>
+      <a href="#">portfolio</a>
+      <a href="#">about me</a>
+      <a href="#">contact</a>
+    </section>
+
+    <h1 id="title">Jamie Kellis</h1>
+
+    <nav>
+      <a href="#">home</a>
+      <a href="#">portfolio</a>
+      <a href="#">about me</a>
+      <a href="#">contact</a>
+        <section class="sm-icons">
+          <a href="https://www.facebook.com/jrkellisdesign" target="_blank"><img src="images/social-icons/facebook.png" width="30" alt=""></a>
+          <a href="https://www.instagram.com/jrkellis/" target="_blank"><img src="images/social-icons/instagram.png" width="30" alt=""></a>
+          <a href="https://www.linkedin.com/in/jamie-kellis-78487b153/" target="_blank"><img src="images/social-icons/linkedin.png" width="30" alt=""></a>
+          <a href="https://www.pinterest.com/jrkellis/_saved/" target="_blank"><img src="images/social-icons/pinterest.png" width="30" alt=""></a>
+        </section>
+    </nav>
+
+    <section class="intro">
+      <h1 class="starkey">Hey There!</h1>
+      <p>Hello, and welcome! I'm a freelance graphic designer from North Carolina. I've worked with local small businesses and my county's community college to create print and digital advertising campaigns, collateral materials, and websites. I'm passionate about design and the creative process.</p>
+      <img src="images/profile.png" alt="Illustrated girl with a bandana">
+
+    </section>
+
+    <section class="whatIdo">
+      <h1>What I Do</h1>
+
+      <div class="disciplines">
+        <img src="images/placeholder.gif" alt="">
+        <h2>Illustration</h2>
+        <p>Etiam porta dapibus vulputate. In scelerisque lobortis odio, id dictum urna scelerisque sed.</p>
+      </div>
+
+      <div class="disciplines">
+        <img src="images/placeholder.gif" alt="">
+        <h2>Graphic Design</h2>
+        <p>Nunc congue varius auctor. Nam id lorem leo. In pellentesque eros at leo consequat tincidunt.</p>
+      </div>
+
+      <div class="disciplines">
+        <img src="images/placeholder.gif" alt="">
+        <h2>Web Design</h2>
+        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed ut elit eget libero aliquet lobortis.</p>
+      </div>
+    </section>
+
+
+    <section class="work">
+      <h1>My Recent Work</h1>
+      <p>Etiam porta dapibus vulputate. In scelerisque lobortis odio, id dictum urna scelerisque sed. Nunc congue varius auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed ut elit eget libero aliquet lobortis.</p>
+      <div class="imageGroup">
+        <img src="images/placeholder.gif" alt="">
+        <img src="images/placeholder.gif" alt="">
+        <img src="images/placeholder.gif" alt="">
+        <img src="images/placeholder.gif" alt="">
+        <img src="images/placeholder.gif" alt="">
+        <img src="images/placeholder.gif" alt="">
+        <img src="images/placeholder.gif" alt="">
+        <img src="images/placeholder.gif" alt="">
+        <img src="images/placeholder.gif" alt="">
+        <img src="images/placeholder.gif" alt="">
+        <img src="images/placeholder.gif" alt="">
+        <img src="images/placeholder.gif" alt="">
+      </div>
+    </section>
+
+    <div class="credentials">
+      <h1>Credentials</h1>
+        <section class="education">
+          <h2>Education</h2>
+          <h3>Wake Technical Community College</h3>
+          <h4>2019 - present</h4>
+          <p>Associate in Applied Science: Web Design</p>
+
+          <h3>Randolph Community College</h3>
+          <h4>2008 - 2010</h4>
+          <p>Associate in Applied Science: Advertising &amp; Graphic Design</p>
+        </section>
+
+        <section class="experience">
+          <h2>Experience</h2>
+
+          <h3>Owner and Designer</h3>
+          <h4>JRKellis Design</h4>
+          <h5>2018 - present</h5>
+          <p>I currently work as a freelance graphic and web designer, and am always looking for new projects! I help businesses and organizations to get established online and create media both for online and offline use.</p>
+
+          <h3>Assistant to the Public Information Officer</h3>
+          <h4>Montgomery Community College</h4>
+          <h5>2016 - 2018</h5>
+          <p>While working for MCC, I worked closely with the Public Information Officer to create artwork for various programs, events, and informational purposes. From billboards to semester schedules and posters to annual reports, I created all the visuals for the college.</p>
+        </section>
+    </div>
+
+    <section class="getInTouch">
+      <h1 class="starkey">Get In Touch!</h1>
+      <input type="text" name="name" placeholder="name:">
+      <input type="email" name="email" placeholder="email:">
+      <textarea name="message" rows="8" cols="80" placeholder="message (optional):"></textarea>
+
+      <input type="submit" name="submit" value="Submit" id="submit">
+    </section>
+
+    <footer>
+      <a href="mailto:jamie@jrkellis.com" class="email">jamie@jrkellis.com</a>
+      <a href="tel:910-123-4567" class="tel">910-123-4567</a>
+      <section class="footer-icons">
+          <a href="https://www.facebook.com/jrkellisdesign" target="_blank"><img src="images/social-icons/facebook.png" width="30" alt=""></a>
+          <a href="https://www.instagram.com/jrkellis/" target="_blank"><img src="images/social-icons/instagram.png" width="30" alt=""></a>
+          <a href="https://www.linkedin.com/in/jamie-kellis-78487b153/" target="_blank"><img src="images/social-icons/linkedin.png" width="30" alt=""></a>
+          <a href="https://www.pinterest.com/jrkellis/_saved/" target="_blank"><img src="images/social-icons/pinterest.png" width="30" alt=""></a>
+      </section>
+      <p>Copyright &#169; 2020 Jamie Kellis</p>
+    </footer>
+
+
+  </body>
+</html>
